@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+    colors="false"
+    stopOnFailure="false"
+>
+    <testsuites>
+        <testsuite name="LoanApi">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+
+</phpunit>
