@@ -8,6 +8,8 @@ use App\Middleware\GetLoan;
 use Slim\Routing\RouteCollectorProxy;
 use App\Controllers\LoanIndex;
 use App\Controllers\Loans;
+use Psr\Http\Message\ServerRequestInterface as Request;
+use Psr\Http\Message\ResponseInterface as Response;
 
 define('APP_ROOT', dirname(__DIR__));
 
@@ -37,6 +39,9 @@ $error_handler->forceContentType('application/json');
 
 $app->add(new AddJsonResponseHeader());
 
+$app->get('/', function (Request $request, Response $response) {
+    return $response->withHeader('Location', '/api/loans')->withStatus(302);
+});
 
 $app->group('/api', function (RouteCollectorProxy $group) {
     $group->get('/loans', LoanIndex::class);
