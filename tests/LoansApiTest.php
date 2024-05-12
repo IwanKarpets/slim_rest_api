@@ -106,7 +106,7 @@ class LoansApiTest extends TestCase
 
     public function testDeleteLoanById()
     {
-        $loanId = 39;
+        $loanId = 2;
         $response = $this->createRequestAndHandle('DELETE', "api/loans/$loanId");
         $this->assertEquals(200, $response->getStatusCode());
         $responseData = json_decode((string)$response->getBody(), true);
