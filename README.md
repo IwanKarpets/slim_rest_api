@@ -107,7 +107,7 @@ http://slim-rest-api/api/loans/53, в тело запроса должны бы�
 
 ### DELETE /loans/{id}
 Удаление займа. `{id}` также должен быть цифрой.  
-http://slim-rest-api/api/loans/53
+http://slim-rest-api/api/loans/53  
 Ответ
 ```json
 {
