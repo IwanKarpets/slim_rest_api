@@ -70,7 +70,7 @@ http://slim-rest-api/api/loans
 }
 ```
 Ответ 
-```{
+```json{
     "message": "Loan created",
     "id": "53"
 }
