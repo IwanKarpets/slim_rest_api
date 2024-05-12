@@ -34,6 +34,7 @@ Require-dev
 
 phpunit/phpunit: Фреймворк PHPUnit для модульного тестирования PHP-приложений.
 squizlabs/php_codesniffer: Инструмент PHP_CodeSniffer для проверки стиля кодирования PHP.
+```
 ## API методы
 
 Ваше приложение поддерживает следующие методы RESTful API для работы с займами:
