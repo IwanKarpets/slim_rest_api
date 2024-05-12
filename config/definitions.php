@@ -3,7 +3,6 @@
 use App\Database;
 use App\Repositories\LoanRepository;
 
-
 $url = getenv("CLEARDB_DATABASE_URL") ? parse_url(getenv("CLEARDB_DATABASE_URL")) : null;
 
 $server = $url ? $url["host"] : '127.0.0.1';
