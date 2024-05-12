@@ -157,7 +157,7 @@ GET /loans?max_amount=5000
 При помощи `start_date`, `end_date` задается диапазон дат  
 Формат: `Y-M-D`  
 Примеры запросов:   
-http://slim-rest-api/api/loans?min_amount=10000&min_amount=16000&start_date=2024-05-07&end_date=2024-05-10
+http://slim-rest-api/api/loans?min_amount=10000&min_amount=16000&start_date=2024-05-07&end_date=2024-05-10  
 http://slim-rest-api/api/loans?start_date=2024-05-07&end_date=2024-05-10  
 http://slim-rest-api/api/loans?max_amount=16000&min_amount=10000&start_date=2024-05-07
 
