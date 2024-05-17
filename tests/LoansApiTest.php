@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 use Slim\Psr7\Factory\ServerRequestFactory;
 use Slim\Psr7\Factory\ResponseFactory;
 
-require_once __DIR__. '/../src/app_setup.php';
+require_once __DIR__ . '/../src/app_setup.php';
 class LoansApiTest extends TestCase
 {
     protected $app;
